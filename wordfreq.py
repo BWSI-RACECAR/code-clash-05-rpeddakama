@@ -33,7 +33,9 @@ class Solution:
         # TODO: Write code below to return an int with the solution to the prompt
         count = 0
         for i in range(len(hi_string) - 1):
-            if hi_string[i] == "h" and hi_string[i + 1] == "i":
+            if (hi_string[i] == "h" or hi_string[i] == "H") and (
+                hi_string[i + 1] == "i" or hi_string[i + 1] == "I"
+            ):
                 count += 1
 
         return count
